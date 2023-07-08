@@ -1,7 +1,7 @@
 class Solution {
 public:
     long long putMarbles(vector<int>& weights, int k) {
-       int n=weights.size();
+        int n=weights.size();
        if(n == 1 || k == 1) return 0; 
         vector<long long> div(n, 2e9+1);
         for(int i=1; i<n; i++){
