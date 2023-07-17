@@ -13,7 +13,6 @@ string temp = "";set<string> st;
     for (int j = i; j < str.size(); j++) {
         solve(j + 1, len, str, temp, st);
     }
-    temp.pop_back();
 }
 
     CombinationIterator(string characters, int combinationLength) {
