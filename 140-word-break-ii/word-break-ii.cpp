@@ -6,7 +6,7 @@ public:
         return temp == s;
     }
 
-    void solve(int i, string& s,/*unordered_set*/vector<string>& wordDict, string& ans, vector<string>& res) {
+    void solve(int i, string& s,vector<string>& wordDict, string& ans, vector<string>& res) {
         if (i >= s.size()) {
             if (isValid(ans, s)) {
                 if (ans.back() == ' ')
@@ -30,8 +30,7 @@ public:
     vector<string> wordBreak(string s, vector<string>& wordDict) {
         vector<std::string> res;
         string ans;
-        // unordered_set<string> wordSet(wordDict.begin(), wordDict.end());
-        solve(0, s, /*wordSet*/wordDict, ans, res);
+        solve(0, s, wordDict, ans, res);
         return res;
     }
 };
