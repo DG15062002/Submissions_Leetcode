@@ -9,8 +9,8 @@ public:
     void solve(int i, string& s,vector<string>& wordDict, string& ans, vector<string>& res) {
         if (i >= s.size()) {
             if (isValid(ans, s)) {
-                if (ans.back() == ' ')
-                    ans.pop_back();
+                // if (ans.back() == ' ')
+                //     ans.pop_back();
                 res.push_back(ans);
             }
             return;
